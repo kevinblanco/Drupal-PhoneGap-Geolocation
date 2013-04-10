@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <title>PhoneGap</title>
+  <link rel="stylesheet" href="css/jquery-mobile.css" /> 
+  <link rel="stylesheet" href="css/main.css" />
+  <script type="text/javascript" charset="utf-8" src="js/lib/cordova.js"></script>
+  <script type="text/javascript" charset="utf-8" src="js/lib/jquery-1.9.js"></script>
+  <script type="text/javascript" charset="utf-8" src="js/lib/jquery-mobile-1.3.js"></script>
+ </head>
+ <body>
+    <div data-role="page" id="amigos_cerca">
+
+	 <script type="text/javascript" charset="utf-8" src="js/amigos_cerca.js"></script>
+	 
+ 		<div data-role="header"><h1>Amigos Cerca</h1></div><!-- /header -->
+	
+		 <div data-role="content">
+		 
+			<label for="slider-fill">Distancia en Km</label>
+			<input type="range" name="slider-fill" id="distancia" value="10" min="0" max="100" step="5" data-highlight="true">
+      		<a href="#" id="buscar_amigos" data-role="button" onclick="buscarAmigosCerca( )">Buscar Amigos Cerca</a>
+      		<p id="lista_amigos"></p>
+      		<ul data-role="listview" id="lista_de_amigos"></ul>
+
+    	</div><!-- /content -->
+    
+	</div><!-- /page -->
+ </body>
+</html>
